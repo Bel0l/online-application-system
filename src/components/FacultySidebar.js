@@ -1,8 +1,7 @@
-// SideBar.js
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const SideBar = () => {
+function FacultySidebar() {
   return (
     <div className="h-screen bg-[#1F4887] flex">
       <button
@@ -37,7 +36,7 @@ const SideBar = () => {
           <ul className="space-y-2 font-medium">
             <li>
               <Link
-                to="/Welcome"
+                to="/FacultyDashboard"
                 className="flex items-center p-2 text-white rounded-lg hover:bg-gray-100 hover:text-gray-700 group"
               >
                 <svg
@@ -53,7 +52,7 @@ const SideBar = () => {
             </li>
             <li>
               <Link
-                to="/Completed-Applications"
+                to="/FacultyCompletedApp"
                 className="flex items-center p-2 text-white rounded-lg hover:bg-gray-100 hover:text-gray-700 group"
               >
                 <svg
@@ -68,7 +67,7 @@ const SideBar = () => {
             </li>
             <li>
               <Link
-                to="/Pending-Applications"
+                to="/FacultyPendingApp"
                 className="flex items-center p-2 text-white rounded-lg hover:bg-gray-100 hover:text-gray-700 group"
               >
                 <svg
@@ -106,7 +105,7 @@ const SideBar = () => {
         </div>
       </aside>
     </div>
-  );
-};
+  )
+}
 
-export default SideBar;
+export default FacultySidebar

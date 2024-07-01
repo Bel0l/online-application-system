@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import UserData from './UsersData.js';
-import SideBar from './SideBar.js';
+import SideBar from './FacultySidebar.js';
 
 const API = "https://jsonplaceholder.typicode.com/users";
 
-const Completed_Applications = () => {
+const FacultyPendingApp = () => {
   const [users, setUsers] = useState([]);
 
   const fetchUsers = async (url) => {
@@ -51,4 +51,4 @@ const Completed_Applications = () => {
   );
 };
 
-export default Completed_Applications;
+export default FacultyPendingApp;
